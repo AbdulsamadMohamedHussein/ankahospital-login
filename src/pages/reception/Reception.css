@@ -1,0 +1,563 @@
+.page {
+    min-height: 100vh;
+    background: #f4f6fb;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #0f172a;
+}
+
+
+/* Header */
+
+.hdr {
+    height: 72px;
+    background: #1976d2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 6px;
+    object-fit: contain;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.sub {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.hdrRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.welcome {
+    text-align: right;
+    margin-right: 8px;
+}
+
+.w1 {
+    font-weight: 900;
+}
+
+.w2 {
+    opacity: 0.9;
+    font-size: 12px;
+}
+
+
+/* Layout */
+
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 16px;
+    padding: 18px;
+}
+
+.side {
+    background: #fff;
+    border: 1px solid #e6edf7;
+    border-radius: 14px;
+    padding: 14px;
+    height: fit-content;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.navTitle {
+    font-weight: 900;
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+.nav {
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid #e8eef7;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 800;
+    color: #123;
+    margin-bottom: 8px;
+}
+
+.nav:hover {
+    background: #eef6ff;
+}
+
+.nav.active {
+    background: #1976d2;
+    color: #fff;
+    border-color: #1976d2;
+}
+
+.content {
+    min-width: 0;
+}
+
+.main {
+    padding: 2px;
+}
+
+.pageTitle {
+    font-size: 22px;
+    font-weight: 900;
+    color: #0b57d0;
+    margin: 8px 0 12px;
+}
+
+
+/* Cards */
+
+.card {
+    background: #fff;
+    border: 1px solid #e6edf7;
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+    margin-bottom: 14px;
+}
+
+.cardHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #0b57d0;
+}
+
+
+/* Inputs */
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #cfd8e3;
+    outline: none;
+    background: #fff;
+}
+
+.input:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.18);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 900;
+    color: #334155;
+}
+
+.muted {
+    color: #556;
+    font-size: 13px;
+}
+
+.small {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/* Buttons */
+
+.btn {
+    border: none;
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-weight: 900;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #cfd8e3;
+}
+
+.btn:hover {
+    background: #eef6ff;
+}
+
+.btn.primary {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+}
+
+.btn.primary:hover {
+    background: #125ea6;
+}
+
+.btn.success {
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+}
+
+.btn.success:hover {
+    background: #246629;
+}
+
+.btn.danger {
+    background: #c62828;
+    color: #fff;
+    border: none;
+}
+
+.btn.danger:hover {
+    background: #a61f1f;
+}
+
+.btnSmall {
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #cfd8e3;
+}
+
+.btnSmall.primary {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+}
+
+.btnSmall.primary:hover {
+    background: #125ea6;
+}
+
+.btnSmall.danger {
+    background: #c62828;
+    color: #fff;
+    border: none;
+}
+
+.btnSmall.danger:hover {
+    background: #a61f1f;
+}
+
+
+/* Grids */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.stat {
+    background: #f8fbff;
+    border: 1px solid #e3eefc;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.statVal {
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 6px;
+    color: #111;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.formGrid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.tableWrap {
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #eef2f7;
+    border-radius: 12px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table th {
+    text-align: left;
+    padding: 12px;
+    background: #f3f6fb;
+    border-bottom: 1px solid #e7eef8;
+    color: #123;
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #eef2f7;
+    color: #123;
+}
+
+.empty {
+    padding: 12px;
+    border-radius: 12px;
+    background: #f7f7f7;
+    border: 1px dashed #cfd8e3;
+    color: #445;
+}
+
+
+/* Billing */
+
+.billTop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.orderBox {
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 14px;
+    background: #eef6ff;
+    border: 1px solid #cfe6ff;
+}
+
+.svcGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.svcCard {
+    border: 1px solid #e6edf7;
+    border-radius: 14px;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+}
+
+.svcName {
+    font-weight: 900;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.svcMeta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #556;
+    margin-bottom: 10px;
+}
+
+.payRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+    align-items: end;
+}
+
+.totBox {
+    border: 1px solid #e6edf7;
+    border-radius: 14px;
+    padding: 12px;
+    background: #f8fbff;
+}
+
+.totLine {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+
+/* Patient info */
+
+.gridInfo {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.info {
+    background: #f8fbff;
+    border: 1px solid #e3eefc;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.infoVal {
+    font-weight: 900;
+    margin-top: 6px;
+    color: #111;
+}
+
+
+/* Print */
+
+.paper {
+    max-width: 820px;
+    background: #fff;
+    border: 1px solid #e6edf7;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.pHead {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pLogo {
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 6px;
+    object-fit: contain;
+}
+
+.pTitle {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.pRight {
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px;
+    color: #111;
+}
+
+.pInfo {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #111;
+}
+
+.pTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.pTable th {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pTable td {
+    border-bottom: 1px solid #eee;
+    padding: 8px;
+}
+
+.pTotals {
+    max-width: 380px;
+    margin-left: auto;
+}
+
+.pLine {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.pThanks {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #111;
+}
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+    .formGrid2 {
+        grid-template-columns: 1fr;
+    }
+    .billTop {
+        grid-template-columns: 1fr;
+    }
+    .svcGrid {
+        grid-template-columns: 1fr;
+    }
+    .payRow {
+        grid-template-columns: 1fr;
+    }
+    .gridInfo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .print-area,
+    .print-area * {
+        visibility: visible;
+    }
+    .print-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}

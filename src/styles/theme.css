@@ -1,0 +1,20 @@
+:root {
+    --primary: #1976d2;
+    --primary-dark: #125ea6;
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --border: #e5ecf6;
+    --text: #0f172a;
+    --muted: #64748b;
+    --success: #2e7d32;
+    --danger: #c62828;
+}
+
+
+/* Global */
+
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
